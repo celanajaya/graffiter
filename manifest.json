@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Graffiter",
+  "description": "This extension lets you draw all over web pages and save it as a jpg",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "spray.png",
+    "default_popup": "popover.html",
+    "default_title": "Graffiter"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["drawing.js"],
+      "css": ["drawing.css"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ]
+}

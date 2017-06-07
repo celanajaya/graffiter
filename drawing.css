@@ -1,0 +1,70 @@
+canvas {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    cursor: crosshair;
+}
+
+button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 9pt;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    width: 100px;
+    height: 25px;
+    background-color: gray;
+    outline: none;
+}
+
+table {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1001;
+}
+
+td {
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+label .graff-label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.graff-slider-container {
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.graff-slider {
+    float: right;
+    outline: none;
+    height: 15px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            color-stop(0.50, cyan),
+            color-stop(0.50, #C5C5C5)
+    );
+}
+
+.graff-slider::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #E9E9E9;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 15px;
+    width: 25px;
+}
